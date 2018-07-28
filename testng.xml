@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test name="Test-1">
+        <groups>
+            <run>
+                <include name="sanity-group"></include>
+            </run>
+        </groups>
+        <classes>
+            <!-- Your comment here -->
+            <!--<class name="TestNG"></class>
+            <class name="SampleTest"></class>
+            <class name = "DataProviderInSameClass"></class>
+            <class name = "DataProviderInSameClassWithMultiParams"></class>
+            <class name = "DataProviderInOtherClass"></class>
+            <class name="TestBelongsToSingleGroup"></class>-->
+            <class name="TestBelongsToMultiGroup"></class>
+        </classes>
+    </test>
+    <test name="Test-2">
+        <groups>
+            <run>
+                <include name="regression-group"></include>
+            </run>
+        </groups>
+        <classes>
+            <!-- Your comment here -->
+            <!--<class name="TestNG"></class>
+            <class name="SampleTest"></class>
+            <class name = "DataProviderInSameClass"></class>
+            <class name = "DataProviderInSameClassWithMultiParams"></class>
+            <class name = "DataProviderInOtherClass"></class>
+            <class name="TestBelongsToSingleGroup"></class>-->
+            <class name="TestBelongsToMultiGroup"></class>
+        </classes>
+    </test>
+    <test name="Test-3">
+        <groups>
+            <run>
+                <include name="regression-group"></include>
+                <exclude name="sanity-group"></exclude>
+            </run>
+        </groups>
+        <classes>
+            <!-- Your comment here -->
+            <!--<class name="TestNG"></class>
+            <class name="SampleTest"></class>
+            <class name = "DataProviderInSameClass"></class>
+            <class name = "DataProviderInSameClassWithMultiParams"></class>
+            <class name = "DataProviderInOtherClass"></class>
+            <class name="TestBelongsToSingleGroup"></class>-->
+            <class name="TestBelongsToMultiGroup"></class>
+        </classes>
+    </test>
+</suite>
